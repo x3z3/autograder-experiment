@@ -56,7 +56,9 @@ The tests.js file is where the tests are written. A test is written in the follo
 ```js
 const testCases = [
     {
+        // Descriptive name of the test
         name: "Driver exists and Loads",
+        // Test function that runs the code
         function : async (driver) => {
             return driver !== null;
         },
@@ -77,6 +79,9 @@ Click the following links to view the project documentation for each exercise:
 
 ### [**Exercise 05** : Decoder Web Page](./READMEs/ex-05.md)
 - [Project Documentation](https://umass-cs-326.github.io/docs/exercises/decoder-web-page/)
+
+### [**Exercise 06** : Decoder Interactive](./READMEs/ex-06.md)
+- [Project Documentation](https://umass-cs-326.github.io/docs/exercises/interactive-decoder/)
 
 ### [**Exercise 07** : Checkerboard](./READMEs/ex-07.md)
 - [Project Documentation](https://umass-cs-326.github.io/docs/exercises/checkerboard/)
