@@ -25,8 +25,6 @@ class SeleniumFramework {
   // Hard refreshes the original driver if needed
   async #reInitDriver() {
     if (this.driver) {
-      await this.driver.manage().deleteAllCookies();
-      await this.driver.executeScript("localStorage.clear();");
       await this.driver.quit();
       this.driver = null;
     }
@@ -49,11 +47,7 @@ class SeleniumFramework {
   async #runTestCase(testCase, testNumber) {
     console.log(`Test ${testNumber}: ${testCase.name}`)
     try {
-      if (testCase.reset) {
-        await this.#reInitDriver();
-      } else {
-        await this.#refreshDriver();
-      }
+      await this.#refreshDriver();
       const result = await testCase.function(this.driver);
       if (result) {
         return { passed: true, critical: false };
@@ -92,7 +86,7 @@ class SeleniumFramework {
       return;
     }
     
-    await this.#reInitDriver();
+    await this.#initDriver();
     
     console.log("========= Running Tests =========");
 
