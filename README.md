@@ -89,5 +89,5 @@ Click the following links to view the project documentation for each exercise:
 ### [**Exercise 08** : Chessboard](./READMEs/ex-08.md)
 - [Project Documentation](https://umass-cs-326.github.io/docs/exercises/chessboard/)
 
-<!-- ### [**Exercise 11** : Rest and Fetch](./ex-09-rest-and-fetch/README.md)
-- [Project Documentation](https://umass-cs-326.github.io/docs/exercises/rest-and-fetch/) -->
+### [**Exercise 9** : Persistent Encoder](./READMEs/ex-09.md)
+- [Project Documentation](https://umass-cs-326.github.io/docs/exercises/persistent-encoder/)
