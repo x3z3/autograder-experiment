@@ -86,7 +86,7 @@ class SeleniumFramework {
       return;
     }
     
-    await this.#initDriver();
+    await this.#reInitDriver();
     
     console.log("========= Running Tests =========");
 
