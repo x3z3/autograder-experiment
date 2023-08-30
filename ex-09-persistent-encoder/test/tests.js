@@ -127,7 +127,7 @@ const testCases = [
           
           await encode.sendKeys("apple");
           encodedText = await encoded.getAttribute('value');
-          console.log(encodedText)
+          
           if (encodedText !== "bqqmf") {
               return false;
           }
@@ -146,7 +146,6 @@ const testCases = [
       },
       failureMessage: "Encode and/or decode doesnt work correctly",
       critical: false,
-      reset : true,
     },
     {
       name: "Persistence Part 2 : Persistence works correctly, and clear has no errors",
@@ -190,7 +189,6 @@ const testCases = [
       },
       failureMessage: "Persistence doesnt work correctly after refresh",
       critical: false,
-      reset : false,
     },
     {
       name: "Persistence Part 3 : Clear resets the storage",
@@ -231,7 +229,6 @@ const testCases = [
       },
       failureMessage: "Clear doesnt reset the local storage correctly",
       critical: false,
-      reset : false,
     },
 ]
 
